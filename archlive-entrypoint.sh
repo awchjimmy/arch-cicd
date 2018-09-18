@@ -8,3 +8,9 @@ cp -r /usr/share/archiso/configs/releng archlive
 
 # confirm copies
 ls -l archlive
+
+# create output dir
+mkdir archlive/out
+
+# build
+archlive/build.sh -v
