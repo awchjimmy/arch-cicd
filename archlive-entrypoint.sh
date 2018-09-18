@@ -20,6 +20,8 @@ mkdir /run/shm
 /tmp/archlive/build.sh -v
 
 # can't afford 10 mins building a bug...
+echo "start to find .iso"
+find *.iso
 find /tmp/archlive
 
 # upload to transfer.sh
