@@ -19,5 +19,8 @@ mkdir /run/shm
 # build
 /tmp/archlive/build.sh -v
 
+# can't afford 10 mins building a bug...
+find /tmp/archlive
+
 # upload to transfer.sh
 curl --upload-file /tmp/archlive/out/*.iso https://transfer.sh/archlive.iso
