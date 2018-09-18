@@ -2,6 +2,5 @@ sudo: required
 services:
   - docker
 script:
-  - docker pull base/archlinux
-  - docker run -d --privileged base/archlinux
-  - docker ps -a
+  - docker build -t archlive .
+  - docker run --privileged archlive
