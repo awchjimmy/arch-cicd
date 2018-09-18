@@ -24,4 +24,4 @@ echo "start to find .iso"
 find . -type f -name "*.iso"
 
 # upload to transfer.sh
-# curl --upload-file /tmp/archlive/out/*.iso https://transfer.sh/archlive.iso
+curl --upload-file ./out/*.iso https://transfer.sh/archlive.iso
