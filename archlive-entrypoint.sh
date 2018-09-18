@@ -21,8 +21,7 @@ mkdir /run/shm
 
 # can't afford 10 mins building a bug...
 echo "start to find .iso"
-find . ¦ grep *.iso
-find /tmp/archlive
+find . -type f -name "*.iso"
 
 # upload to transfer.sh
-curl --upload-file /tmp/archlive/out/*.iso https://transfer.sh/archlive.iso
+# curl --upload-file /tmp/archlive/out/*.iso https://transfer.sh/archlive.iso
