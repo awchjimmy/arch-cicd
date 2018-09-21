@@ -1,5 +1,5 @@
 ## Dockerfile
-FROM base/archlinux:latest
+FROM base/devel:latest
 
 COPY ./archlive-entrypoint.sh /
 RUN chmod +x /archlive-entrypoint.sh
