@@ -13,6 +13,9 @@ ls -l /tmp/archlive
 # ref: https://wiki.archlinux.org/index.php/Install_from_existing_Linux#.2Fdev.2Fshm
 mkdir /run/shm
 
+# append user packages
+cat ./user-packages.x86_64 >> /tmp/archlive/packages.x86_64
+
 # build
 /tmp/archlive/build.sh -v
 
