@@ -20,8 +20,9 @@ cat ./user-packages.x86_64 >> /tmp/archlive/packages.x86_64
 /tmp/archlive/build.sh -v
 
 # can't afford 10 mins building a bug...
-# echo "start to find .iso"
-# find . -type f -name "*.iso"
+echo "start finding .iso"
+find . -type f -name "*.iso"
 
 # upload to transfer.sh
-curl --upload-file ./out/*.iso https://transfer.sh/archlive.iso
+echo "start uploading to transfer.sh"
+curl -X PUT --progress-bar --upload-file $(find . -type f -name "*.iso") https://transfer.sh/archlive.iso
